@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7316455417099237866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7316455417099237864}
+  - component: {fileID: 7316455417099237865}
+  - component: {fileID: 7316455417099237867}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7316455417099237864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316455417099237866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.3081262, y: -3.9831512, z: 1.1098864}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7316455417099237865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316455417099237866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5614a0a8cb388040a62c3f53b7cba27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planePrefab: {fileID: 4402502759156668123, guid: 2a1abcca0d7f79d4383f3af849237a55,
+    type: 3}
+  ballPrefab: {fileID: 7999362813950198578, guid: 360bd9bb625439242a9688dab33bfb57,
+    type: 3}
+  borderPrefab: {fileID: 4160983443840234519, guid: bfc1983b6f540fb49900cc8c79811ed5,
+    type: 3}
+  borderBottomPrefab: {fileID: 7121304424265219067, guid: 8248046cdb3111541a2638fc34f84924,
+    type: 3}
+  fallingPrefabs:
+  - {fileID: 8647548254189067137, guid: 467a6afc3e26da640b945a20886876d2, type: 3}
+  - {fileID: 3816821156205924938, guid: 9fa9a0bf263ad0946a560acab8e82c02, type: 3}
+  timeBetween: 1
+  spawn: 1
+  startBallPosition: {x: 0, y: -1.83, z: 0}
+  startBallRotation: {x: 0, y: 0, z: 0}
+  startPlaneRotation: {x: 0, y: 0, z: 0}
+  startPlanePosition: {x: 0, y: -3.23, z: 0}
+  startBorderLeftPosition: {x: -7.2, y: -1.221506, z: 0}
+  startBorderLeftRotation: {x: 0, y: 0, z: 0}
+  startBorderRightPosition: {x: 7.2, y: -1.221506, z: 0}
+  startBorderRightRotation: {x: 0, y: 0, z: 180}
+  startBorderBottomPosition: {x: 0, y: -5.14, z: 0}
+  startBorderBottomRotation: {x: 0, y: 0, z: 90}
+  startProgressValue: 0
+  leftSpawnPoint: {x: -5, y: 7, z: 0}
+  rightSpawnPoint: {x: 5, y: 7, z: 0}
+--- !u!114 &7316455417099237867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316455417099237866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efbc59b1ac41e714883b5ce741bdc4d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchedPart: {fileID: 0}
